@@ -90,7 +90,7 @@ public class DWRProgramWorkflowService {
 	 */
 	public ProgramWorkflow getProgramWorkflow(String workflowLookup) {
 		ProgramWorkflow workflow = Context.getProgramWorkflowService().getWorkflowByUuid(workflowLookup);
-
+		
 		if (workflow == null) {
 			try {
 				workflow = Context.getProgramWorkflowService().getWorkflow(Integer.parseInt(workflowLookup));
@@ -98,9 +98,6 @@ public class DWRProgramWorkflowService {
 			catch (NumberFormatException e) {
 				log.error("Error while converting a workflow lookup value to an integer: " + workflowLookup, e);
 			}
-		}
-		if (workflow == null) {
-			throw new IllegalArgumentException("Unable to find workflow using " + workflowLookup);
 		}
 		return workflow;
 	}
