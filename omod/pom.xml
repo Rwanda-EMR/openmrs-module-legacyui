@@ -40,13 +40,7 @@
 			<artifactId>${project.parent.artifactId}-api</artifactId>
 			<version>${project.parent.version}</version>
 		</dependency>
-		
-		<dependency>
-            <groupId>org.openmrs.module</groupId>
-            <artifactId>exitfromcare-api</artifactId>
-            <version>${exitfromcareVersion}</version>
-            <scope>provided</scope>
-        </dependency>		
+			
 		<!-- End OpenMRS modules -->
 		
 

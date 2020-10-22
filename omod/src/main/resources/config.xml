@@ -25,9 +25,6 @@
 	<updateURL>https://modules.openmrs.org/modules/download/${project.parent.artifactId}/update.rdf</updateURL>
 	<require_version>${openmrsPlatformVersion}</require_version>
 	<!-- / Module Properties -->
-	<require_modules>
-		<require_module>org.openmrs.module.exitfromcare</require_module>
-	</require_modules>	
 	
 	<!-- Module Activator -->
 	<activator>${project.parent.groupId}.${project.parent.artifactId}.LegacyUIActivator</activator>
